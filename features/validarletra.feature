@@ -5,7 +5,7 @@ Feature: Validar letra
     - Debo mostrar un histórico de la letra ingresada por posición
 
 
-  Scenario: Cuando se ingresa la letra "a" en la posicion 1 debe decir "green a"
-    Given que abri el juego
+  Scenario: Cuando se ingresa la letra "a" debo ver "a _ _ _ _"
+    Given Abrir el juego
     When ingreso la letra "a"
-    Then debo mostrar "A _ _ _ _"
+    Then debo ver "a _ _ _ _"
