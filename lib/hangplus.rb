@@ -8,4 +8,10 @@ class HangPlus
       letter
     end
   end
+
+  def validar_correct letter
+    if @word.include? letter
+      letter
+    end
+  end
 end
