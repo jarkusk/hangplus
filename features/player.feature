@@ -24,7 +24,7 @@ Feature: Ingresar Letra
     When ingresa el valor "a"
     Then debo ver "a"
 
-    Scenario: Si ingreso una nueva letra debe concatenarse a la anterior
+  Scenario: Si ingreso una nueva letra debe concatenarse a la anterior
     Given Abrir el juego
     And ingresa el valor "a"
     When ingresa el valor "r"
