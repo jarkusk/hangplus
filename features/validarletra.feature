@@ -8,7 +8,7 @@ Feature: Validar letra
   Scenario: Cuando se ingresa la letra "z" debo validar "_ _ _ _ _"
     Given Abrir el juego
     When ingresa el valor "z"
-    Then debo ver "z incorrecto"
+    Then debo ver "z"
 
 
 
