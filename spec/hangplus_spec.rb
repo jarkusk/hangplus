@@ -11,6 +11,12 @@ describe HangPlus do
   it 'a debe ser nil' do
     hangp = HangPlus.new
     result = hangp.validar "a"
-    expect(result).to eq nil
+    expect(result).to eq ''
+  end
+
+  it 'z debe ser z' do
+    hangp = HangPlus.new
+    result = hangp.validar "z"
+    expect(result).to eq "z"
   end
 end

@@ -11,3 +11,8 @@ When(/^ingresa el valor "([^"]*)"$/) do |value|
   fill_in('texto', :with => value)
   click_button("guardar")
 end
+
+Then(/^muestra historial "([^"]*)"$/) do |value|
+  expect(page.body).to match /#{value}/m
+end
+
