@@ -4,7 +4,9 @@ Given(/^ingresar letra "([^"]*)" en la posición "([^"]*)"$/) do |letter, positi
 end
 
 Then(/^debo mostrar "([^"]*)" y "([^"]*)"$/) do |letter, flag|
-  pending # Write code here that turns the phrase above into concrete actions
+  visit '/'
+  fill_in('letter', :with => letter)
+  click_button('Guardar')
 end
 
 Given(/^Abrir el juego$/) do
