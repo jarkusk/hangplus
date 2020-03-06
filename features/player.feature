@@ -5,12 +5,16 @@ Feature: Ingresar Letra
 
   CA:
 
-  - Debe mostrar palabras incompletas
+  - Debo poder ver el titulo del juego
   - Debo ingresar una letra
   - Debo ingresar una letra por turno
+  - Debe mostrar palabras incompletas
   - Debo tener un espacio para ingresar la letra
-  - Debo poder ver el titulo del juego
 
-  Scenario: : Debo ver el titulo "Hang+"
+  Scenario: Debo ver el titulo "Hang+"
     Given  Abrir el juego
     Then debo ver "Hang+"
+
+  Scenario: Debo ver la palabra oculta
+    Given Abrir el juego
+    Then debo ver "_ _ _ _ _"

@@ -9,3 +9,4 @@ Feature: Validar letra
     Given Abrir el juego
     When ingreso la letra "a"
     Then debo ver "a _ _ _ _"
+
