@@ -6,3 +6,11 @@ end
 Then(/^debo mostrar "([^"]*)" y "([^"]*)"$/) do |letter, flag|
   pending # Write code here that turns the phrase above into concrete actions
 end
+
+Given(/^Abrir el juego$/) do
+  visit "/"
+end
+
+Then(/^debo ver "([^"]*)"$/) do |value|
+  expect(page.body).to match /#{value}/m
+end
