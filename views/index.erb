@@ -7,7 +7,7 @@
   </head>
   <body>
     <h1>Hang+</h1>
-    <p id="word"><%= session['word'] %></p>
+    <p id="word"><%= session['correct_letter'] %></p>
     <form action="/guardar" method="POST">
       <input id="letter" type="text" name="texto" pattern="[A-Za-z]" maxlength="1" />
       <input type="submit" value="guardar"/>
