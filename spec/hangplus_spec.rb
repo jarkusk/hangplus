@@ -8,7 +8,7 @@ describe HangPlus do
   #
 
 
-  it 'a debe ser válido' do
+  it 'a debe ser nil' do
     hangp = HangPlus.new
     result = hangp.validar "a"
     expect(result).to eq nil
