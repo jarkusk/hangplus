@@ -8,6 +8,7 @@ get '/' do
 end
 
 post "/guardar" do
-  session['word'] = params["texto"]
+  session['word'] = ''
+  session['word'] += params["texto"]
   erb(:index)
 end

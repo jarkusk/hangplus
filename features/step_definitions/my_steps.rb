@@ -14,9 +14,6 @@ Then(/^debo ver "([^"]*)"$/) do |value|
   expect(page.body).to match /#{value}/m
 end
 
-Given(/^El jugador ingreso una letra$/) do
-  visit "/"
-end
 
 When(/^ingresa el valor "([^"]*)"$/) do |value|
   expect(page.body).to match /#{value}/m
