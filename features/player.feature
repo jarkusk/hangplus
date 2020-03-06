@@ -18,3 +18,8 @@ Feature: Ingresar Letra
   Scenario: Debo ver la palabra oculta
     Given Abrir el juego
     Then debo ver "_ _ _ _ _"
+
+  Scenario: Debe tener una entrada de texto y un botón
+    Given El jugador ingreso una letra
+    When ingresa el valor "a"
+    Then debo ver "a _ _ _ _"
