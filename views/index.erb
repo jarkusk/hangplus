@@ -11,7 +11,7 @@
     <form action="/guardar" method="POST">
       <input id="letter" type="text" name="texto">
       <input type="submit" value="guardar"/>
-      <output id="salida" >z incorrecto</output>
+      <output id="salida" ><%= session['salida']%></output>
     </form>
  </body>
 </html>
