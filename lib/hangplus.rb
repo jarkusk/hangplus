@@ -4,7 +4,7 @@ class HangPlus
   end
 
   def validar letter
-    if @word.include? letter
+    if !@word.include? letter
       letter
     end
   end
