@@ -5,8 +5,10 @@ Feature: Validar letra
     - Debo mostrar un histórico de la letra ingresada por posición
 
 
-  Scenario: Cuando se ingresa la letra "a" debo ver "a _ _ _ _"
-    Given Abrir el juego
-    When ingreso la letra "a"
-    Then debo ver "a _ _ _ _"
+  Scenario: Cuando se ingresa la letra "a" debo validar "a _ _ _ _"
+    Given ingresa el valor "a"
+    When valido la letra "a"
+    Then debo ver "a correcto"
+
+
 

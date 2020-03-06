@@ -6,6 +6,17 @@ Then(/^debo ver "([^"]*)"$/) do |value|
   expect(page.body).to match /#{value}/m
 end
 
-When(/^ingreso la letra "([^"]*)"$/) do |value|
-  expect ("##{word}").set "#{value} _ _ _ _"
+Given(/^El jugador ingreso una letra$/) do
+  visit "/"
 end
+
+When(/^ingresa el valor "([^"]*)"$/) do |value|
+  expect(page.body).to match /#{value}/m
+end
+
+When(/^valido la letra "([^"]*)"$/) do |value|
+  visit '/'
+  fill_in('texto', :with => value)
+  expect(find("##{salida}")).to match "#{value} correcto"
+end
+
