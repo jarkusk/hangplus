@@ -22,4 +22,4 @@ Feature: Ingresar Letra
   Scenario: Debe tener una entrada de texto y un botón
     Given El jugador ingreso una letra
     When ingresa el valor "a"
-    Then debo ver "a _ _ _ _"
+    Then debo ver "a"
