@@ -20,6 +20,12 @@ Feature: Ingresar Letra
     Then debo ver "_ _ _ _ _"
 
   Scenario: Debe tener una entrada de texto y un botón
-    Given El jugador ingreso una letra
+    Given Abrir el juego
     When ingresa el valor "a"
     Then debo ver "a"
+
+    Scenario: Si ingreso una nueva letra debe concatenarse a la anterior
+    Given Abrir el juego
+    And ingresa el valor "a"
+    When ingresa el valor "r"
+    Then debo ver "ar"
