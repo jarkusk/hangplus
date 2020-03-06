@@ -19,4 +19,3 @@ When(/^valido la letra "([^"]*)"$/) do |value|
   fill_in('texto', :with => value)
   expect(find("##{salida}")).to match "#{value} correcto"
 end
-
