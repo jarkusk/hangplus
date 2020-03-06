@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hang+</title>
   </head>
+  <style>
+    body {
+      width: 100vw;
+      height: 100vh;
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+    }
+    input[type=submit] {
+      border-radius: 10px;
+      padding: 0.5rem;
+      text-transform: capitalize;
+      border: none;
+      background-color:#ff9012;
+    }
+      ul {
+        list-style-type: none;
+        text-decoration: none;
+        display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      }
+
+  </style>
   <body>
     <h1>Hang+</h1>
     <p id="word"><%= session['correct_letter'] %></p>
